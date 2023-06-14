@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const DivWpp = styled.div`
   display: flex;
   position: fixed;
-  bottom: 20px;
-  right: 50%;
+  bottom: 1rem;
+  left: 0.5rem;
   color: #becfe3;
   align-items: center;
   gap: 1rem;

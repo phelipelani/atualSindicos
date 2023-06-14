@@ -9,7 +9,7 @@ import {
   SociaisMidiasStyled,
 } from "./style";
 import { Link, Outlet } from "react-router-dom";
-import logo from "../../../src/Assets/Logo.png";
+import logo from "../../../src/Assets/lg1.png";
 
 // eslint-disable-next-line react/prop-types
 export const NavBar = ({ isMenuActive, setIsMenuActive }) => {

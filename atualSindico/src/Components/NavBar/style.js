@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const DivHeader = styled.header`
   background-color: #2a1a31;
   display: flex;
-  height: 11vh;
+  height: 20vh;
   width: 100vw;
   align-items: center;
   box-shadow: 0 2px 4px rgba(148, 148, 148, 1);
@@ -13,10 +13,9 @@ export const DivHeader = styled.header`
 
 export const LogoDivStyle = styled.div`
   width: 25%;
-  height: 90%;
-  margin: 1rem;
+  height: 100%;
+  margin: 1rem 2rem 1rem 1rem;
   border-radius: 1rem;
-  background-color: #becfe3;
 
   @media (min-width: 720px) {
     width: 15%;
@@ -31,13 +30,15 @@ export const LogoDivStyle = styled.div`
 
 export const SociaisMidiasStyled = styled.div`
   position: absolute;
-  top: 5%;
+  top: 20%;
   height: 30%;
-  width: 50%;
+  width: 200px;
+  right:18%;
+  gap:5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+
 
   .socialContainer {
     width: 60%;
@@ -68,15 +69,16 @@ export const SociaisMidiasStyled = styled.div`
 `;
 
 export const NavListStyle = styled.nav`
-  position: absolute;
-  top: 11vh;
+  position: fixed;
+  top: 20vh;
+  gap: 2.5rem;
   background: #2a1a31;
   right: 0;
-  height: 89vh;
+  border-bottom-left-radius: 10px;
+  height: 70vh;
   width: 30vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 
   a {
@@ -86,7 +88,7 @@ export const NavListStyle = styled.nav`
     opacity: 0.5;
     cursor: pointer;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   a:hover {
     opacity: 1;
@@ -115,11 +117,11 @@ export const MenuHamburgue = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  top: 20px;
-  right: 30px;
-  width: 70px;
-  height: 37px;
+  gap: 2px;
+  top: 20%;
+  right: 5%;
+  width: 40px;
+  height: 30px;
   justify-content: space-around;
 
   @media (min-width: 720px) {

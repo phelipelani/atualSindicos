@@ -7,7 +7,6 @@ import { WppApelo } from "../../Components/WppChamada";
 
 // eslint-disable-next-line react/prop-types
 export const Home = ({ isMenuActive }) => {
-  console.log(isMenuActive);
 
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   // eslint-disable-next-line react-hooks/exhaustive-deps
