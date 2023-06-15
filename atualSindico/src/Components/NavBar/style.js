@@ -9,6 +9,12 @@ export const DivHeader = styled.header`
   box-shadow: 0 2px 4px rgba(148, 148, 148, 1);
   position: fixed;
   z-index: 100;
+
+  .menu_desktop{
+    width: 75%;
+
+  }
+
 `;
 
 export const LogoDivStyle = styled.div`
@@ -68,6 +74,26 @@ export const SociaisMidiasStyled = styled.div`
 `;
 
 export const NavListStyle = styled.nav`
+position: inherit;
+display: flex;
+flex-direction: row;
+width: 100%;
+height: 60px;
+justify-content: space-around;
+align-items: center;
+
+a {
+  padding: 30px 1rem 0 1rem;
+  color: #becfe3;
+  text-decoration: none;
+  opacity: 0.5;
+  cursor: pointer;
+  text-align: end;
+  font-size: 1.5rem;
+  width:300px;
+}
+
+@media (max-width: 720px){
   position: absolute;
   top: 11vh;
   background: #2a1a31;
@@ -91,24 +117,10 @@ export const NavListStyle = styled.nav`
   a:hover {
     opacity: 1;
   }
+}
 
-  @media (min-width: 720px) {
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 2.3rem;
-    right: 0%;
-    height: 60px;
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    a {
-      padding: 0.2rem;
-    }
-  }
+ 
+ 
 `;
 
 export const MenuHamburgue = styled.div`

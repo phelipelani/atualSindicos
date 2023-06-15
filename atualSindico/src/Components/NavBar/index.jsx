@@ -56,7 +56,7 @@ export const NavBar = ({ isMenuActive, setIsMenuActive }) => {
               <h5 onClick={openInsta}>@atual_sindicoprofissional</h5>
             </div>
           </SociaisMidiasStyled>
-          <div>
+          <div className="contNav">
             <MenuHamburgue className={`mobileMenu`} onClick={handleMenuToggle}>
               <div className="line1"></div>
               <div className="line2"></div>
