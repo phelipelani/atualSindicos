@@ -2,19 +2,18 @@ import { styled } from "styled-components";
 import background from "../../Assets/bg_MIssao.jfif";
 
 export const MainStyle = styled.main`
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url(${background}) center/cover no-repeat;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
   position: static;
-  padding-top: 11vh;
   display: flex;
   justify-content: center;
 `;
 
 export const TextStyled = styled.div`
-  height: 60%;
+  height: 100%;
   .banner {
     height: 100%;
     width: 80%;
@@ -46,7 +45,6 @@ export const CarouselStyled = styled.div`
   width: 100%;
   height: 100%;
   .carousel {
-    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +63,7 @@ export const CarouselStyled = styled.div`
   .slide-container {
     position: relative;
     width: 99vw;
-    height: 45vw;
+    height: 48vh;
     border-radius: 1rem;
   }
 
@@ -89,7 +87,7 @@ export const CarouselStyled = styled.div`
     position: absolute;
     color: white;
     background: rgba(49, 29, 59, 0.5);
-    font-size: 1.5rem;
+    font-size: 1rem;
     animation: fadeInOut 5s infinite;
   }
 

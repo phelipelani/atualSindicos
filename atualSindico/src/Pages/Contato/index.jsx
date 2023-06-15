@@ -1,7 +1,10 @@
-export const Contato = () => {
+import { MainStyle } from "./styled";
+
+// eslint-disable-next-line react/prop-types
+export const Contato = ({ isMenuActive }) => {
   return (
-    <div>
-      <h1>Contato</h1>
-    </div>
+    <MainStyle className={`${isMenuActive ? "mobile" : ""}`}>
+    <h1>Missao</h1>;
+  </MainStyle>
   );
 };

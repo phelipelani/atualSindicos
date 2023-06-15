@@ -8,7 +8,7 @@ import { useState } from "react";
 
 export const RouterMain = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
-  console.log(`vindo do routes ${isMenuActive}`)
+  console.log(`vindo do routes ${isMenuActive}`);
 
   return (
     <Routes>
@@ -21,21 +21,18 @@ export const RouterMain = () => {
           />
         }
       >
-        <Route index  element={<Home isMenuActive={isMenuActive} />} />
+        <Route index element={<Home isMenuActive={isMenuActive} />} />
         <Route
-          isMenuActive={isMenuActive}
           path="/missao"
-          element={<Missao />}
+          element={<Missao isMenuActive={isMenuActive} />}
         />
         <Route
-          isMenuActive={isMenuActive}
           path="/quem_somos"
-          element={<QuemSomos />}
+          element={<QuemSomos isMenuActive={isMenuActive} />}
         />
         <Route
-          isMenuActive={isMenuActive}
           path="/contato"
-          element={<Contato />}
+          element={<Contato isMenuActive={isMenuActive} />}
         />
       </Route>
     </Routes>
