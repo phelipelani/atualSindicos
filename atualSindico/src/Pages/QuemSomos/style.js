@@ -39,17 +39,47 @@ export const DivNameStyle = styled.div`
       margin: 0 auto;
       font-weight: 800;
       font-size: 1.5rem;
+    } 
+  }
+
+  @media (min-width: 720px){
+    width: 95%;
+    display: flex;
+    margin-top: 10vh;
+    align-items: center;
+    height: 30vh;
+    padding: 1rem;
+    justify-content: center;
+
+    img {
+      height: 100%;
+      width: 12%;
+      object-fit: contain;
+
+      em{
+        overflow: hidden;
+        color: #becfe3;
+        margin: 0 auto;
+        font-weight: 800;
+        font-size: 2rem;
+      }
     }
 
-    @media (min-width: 720px){
-      margin-top:0;
-      heigth:20%;
+    div {
+ 
+      height: 100%;
+      display: flex;
+      width: 50%;
+      justify-content: space-evenly;
+      align-items: flex-start;
+
     }
   }
 `;
 
 export const VitrineStyle = styled.ul`
   list-style: none;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -76,6 +106,16 @@ export const VitrineStyle = styled.ul`
       font-size: 1rem;
       font-weight: bold;
       margin-bottom: 10px;
+    }
+
+    @media (min-width: 720px){
+      width: 70%;
+      li {
+        width: 70%;
+        background-color: rgba(42, 26, 49, 0.5);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        border-radius: 1rem;
+        padding: 1rem;
     }
   }
 `;
