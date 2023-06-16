@@ -46,17 +46,17 @@ export const QuemSomos = () => {
   // }, [message]);
 
   const itemVariants = {
-    hidden: { x: 100 },
-    visible: { x: 0 },
+    hidden: { y: 100 },
+    visible: { y: 0 },
   };
   return (
     <MainStyle>
       <DivNameStyle>
         <img src={logo} alt="LogoTipo Atual_Sindicos" />
         <div>
-        <em className="Atual">Atual Sindico Profissional </em> <em className="slogan">Gestão Condominial </em>
+          <em className="Atual">Atual Sindico Profissional </em>{" "}
+          <em className="slogan">Gestão Condominial </em>
         </div>
-       
       </DivNameStyle>
 
       <VitrineStyle>
@@ -66,30 +66,53 @@ export const QuemSomos = () => {
           animate="visible"
           transition={{ ease: "easeOut", duration: 0.5 }}
         >
-          <h3>Quem Somos</h3>
+          <h4>Quem Somos</h4>
           <br />
-          <h4>
-            Com experiência em gestão a mais de 10 anos, somos a Síndico
-            Profissional e Gestão Condominial, uma empresa dedicada a prestar
-            serviços de gestão condominial de alta qualidade. Contamos com uma
-            equipe de profissionais experientes e altamente capacitados, que
-            estão sempre atualizados com as melhores práticas do mercado.
-            Oferecemos soluções personalizadas para atender às necessidades de
-            cada condomínio, incluindo administração financeira, gestão de
-            recursos humanos, manutenção predial, mediação de conflitos e muito
-            mais. Nosso objetivo é garantir a tranquilidade e a preservação do
-            patrimônio dos condôminos, através de uma gestão eficiente,
-            transparente e profissional. Ao optar pelos nossos serviços, os
-            condomínios têm acesso a uma equipe de profissionais altamente
-            capacitados, que possuem amplo conhecimento das normas vigentes e
-            estão sempre atualizados com as melhores práticas de gestão
-            condominial. Valorizamos a comunicação transparente e o
-            relacionamento próximo com os condôminos, buscando sempre a sua
-            participação e envolvimento nas decisões importantes para o
-            condomínio. Nossa empresa preza pela ética, transparência e
-            responsabilidade em todas as nossas ações, garantindo uma gestão
-            eficaz e confiável.
-          </h4>
+          <br />
+          <h3>
+            Você está buscando uma gestão condominial de alta qualidade para o
+            seu condomínio? A Atual Síndico Profissional e Gestão Condominial
+            está aqui para ajudar! Com mais de 10 anos de experiência no ramo,
+            somos uma equipe dedicada e experiente, pronta para oferecer
+            soluções personalizadas que atendam às suas necessidades.
+            <br />
+            <br />
+            Nossa empresa se destaca pela excelência em todos os aspectos da
+            gestão condominial. Contamos com profissionais altamente
+            capacitados, sempre atualizados com as melhores práticas do mercado,
+            para garantir que o seu condomínio esteja em boas mãos.
+            <br />
+            <br />
+            Administração financeira, gestão de recursos humanos, manutenção
+            predial e mediação de conflitos são apenas algumas das áreas em que
+            podemos ajudar. Estamos preparados para cuidar de todos os detalhes,
+            visando a tranquilidade e a preservação do patrimônio dos
+            condôminos.
+            <br />
+            <br />
+            <br />
+            <br />
+            <h4>Por que escolher a Atual Sindico Profissional?</h4>
+            <br />
+            <br />
+            Ao escolher os nossos serviços, você terá acesso a uma equipe de
+            profissionais altamente capacitados, que conhecem profundamente as
+            normas vigentes e aplicam as melhores práticas de gestão
+            condominial. Valorizamos a transparência e o relacionamento próximo
+            com os condôminos, buscando sempre a participação ativa de todos nas
+            decisões importantes para o condomínio.
+            <br />
+            <br />
+            A ética, a transparência e a responsabilidade são valores
+            fundamentais para nós. Nossas ações são pautadas por uma gestão
+            eficaz e confiável, que visa proporcionar o melhor para o seu
+            condomínio.
+            <br />
+            <br />
+            Não perca tempo e entre em contato conosco hoje mesmo! Descubra como
+            podemos transformar a gestão do seu condomínio, garantindo a
+            segurança, a tranquilidade e o bem-estar de todos os condôminos.
+          </h3>
         </motion.li>
       </VitrineStyle>
 

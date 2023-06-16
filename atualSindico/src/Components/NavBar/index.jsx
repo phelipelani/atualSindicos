@@ -5,6 +5,7 @@ import {
   DivHeader,
   LogoDivStyle,
   MenuHamburgue,
+  Menu_nav_social,
   NavListStyle,
   SociaisMidiasStyled,
 } from "./style";
@@ -38,24 +39,25 @@ export const NavBar = ({ isMenuActive, setIsMenuActive }) => {
   return (
     <>
       <DivHeader>
-        <LogoDivStyle>
-          <img src={logo} alt="Logo Atual" />
-        </LogoDivStyle>
-        <div className="menu_desktop">
-          <SociaisMidiasStyled>
-            <div className="socialContainer">
-              <BsFillTelephoneOutboundFill className="wppIcons fone" />
-              <h5 onClick={openFone}>(12) 3883 - 8005 </h5>
-            </div>
-            <div className="socialContainer">
-              <IoLogoWhatsapp onClick={openWhatsApp} className="wppIcons wpp" />
-              <h5 onClick={openWhatsApp}>(12) 9 8300 - 3611</h5>
-            </div>
-            <div className="socialContainer">
-              <RiInstagramFill className="wppIcons insta" />
-              <h5 onClick={openInsta}>@atual_sindicoprofissional</h5>
-            </div>
-          </SociaisMidiasStyled>
+        <SociaisMidiasStyled>
+          <div className="socialContainer">
+            <BsFillTelephoneOutboundFill className="wppIcons fone" />
+            <h5 onClick={openFone}>(12) 3883 - 8005 </h5>
+          </div>
+          <div className="socialContainer">
+            <IoLogoWhatsapp onClick={openWhatsApp} className="wppIcons wpp" />
+            <h5 onClick={openWhatsApp}>(12) 9 8300 - 3611</h5>
+          </div>
+          <div className="socialContainer">
+            <RiInstagramFill className="wppIcons insta" />
+            <h5 onClick={openInsta}>@atual_sindicoprofissional</h5>
+          </div>
+        </SociaisMidiasStyled>
+
+        <Menu_nav_social>
+          <LogoDivStyle>
+            <img src={logo} alt="Logo Atual" />
+          </LogoDivStyle>
           <div>
             <MenuHamburgue className={`mobileMenu`} onClick={handleMenuToggle}>
               <div className="line1"></div>
@@ -69,7 +71,7 @@ export const NavBar = ({ isMenuActive, setIsMenuActive }) => {
               <Link to={"contato"}>Contato</Link>
             </NavListStyle>
           </div>
-        </div>
+        </Menu_nav_social>
       </DivHeader>
       <Outlet />
     </>

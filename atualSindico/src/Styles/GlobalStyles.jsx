@@ -12,9 +12,9 @@ export const GlobalStyles = createGlobalStyle`
     };
 
 .wppIcons{
-    width: 2rem;
-    font-size:1.2rem;
-    color: #becfe3;
+    width: 1rem;
+    color:  #2a1a31;
+    padding:2px;
 }
 .fone:hover{
     color: #fff;

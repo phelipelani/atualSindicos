@@ -2,69 +2,43 @@ import { styled } from "styled-components";
 import background from "../../Assets/bg.jpg";
 
 export const MainStyle = styled.main`
-  background: linear-gradient(rgba(99, 99,99, 0.8), rgba(99, 99,99, 0.8)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
     url(${background}) center/cover no-repeat;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
   padding-top: 12vh;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
-  justify-content: center;
-  align-items: center;
+  gap: 1rem;
+  box-sizing: border-box;
 `;
 
 export const DivNameStyle = styled.div`
   width: 95%;
-  height: 100px;
+  padding: 1rem;
   display: flex;
-  margin-top: 30vh;
+  margin-top: 12vh;
   align-items: center;
 
-
   img {
-    height: 80%;
+    height: 100%;
     width: 20%;
     object-fit: cover;
   }
   div {
-    align-items:center;
+    align-items: center;
     display: flex;
-    width: 60%;
+    width: 80%;
     flex-direction: column;
-    text-align:center;
-   
+    text-align: center;
 
     em {
       overflow: hidden;
       color: #becfe3;
       margin: 0 auto;
-      font-size: 0.9rem;
-   
-    }
-    .slogan{
-        color:rgba(49, 29, 59, 1);
-      }
-  }
-`;
-
-export const H2Style = styled.h2`
-  margin-top: 10vh;
-  color: #becfe3;
-  font-weight: 800;
-  text-align: center;
-  padding: 1rem;
-
-  background-color: pink;
-
-  @media (min-width: 720px) {
-    background-color: pink;
-    align-items: center;
-    max-width: 60%;
-    em {
-      font-size: 3rem;
+      font-weight: 800;
+      font-size: 1.5rem;
     }
   }
 `;
@@ -75,15 +49,28 @@ export const VitrineStyle = styled.ul`
   flex-wrap: wrap;
   gap: 1rem;
   width: 100%;
-  height: 80%;
+  height: 70%;
+  padding: 1rem;
+  margin-bottom:4rem;
 
   li {
     width: 100%;
-    height: 50%;
-    background-color: rgba(190, 207, 227, 0.5);
+    background-color: rgba(42, 26, 49, 0.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     border-radius: 1rem;
     padding: 1rem;
+
+    h4 {
+      color: #becfe3;
+      font-weight: 600;
+      font-size: calc(1rem + 0.5vw)
+    }
+
+    h3 {
+      color: #becfe3;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
   }
 `;
-export const SectionStyle = styled.section``;
