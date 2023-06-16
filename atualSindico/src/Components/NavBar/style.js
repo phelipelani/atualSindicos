@@ -10,6 +10,22 @@ export const DivHeader = styled.header`
   box-shadow: 0 2px 4px rgba(148, 148, 148, 1);
   position: fixed;
   z-index: 100;
+<<<<<<< HEAD
+=======
+
+  .menu_desktop{
+    width: 75%;
+
+  }
+
+`;
+
+export const LogoDivStyle = styled.div`
+  width: 25%;
+  height: 100%;
+  margin: 1rem 2rem 1rem 1rem;
+  border-radius: 1rem;
+>>>>>>> e397da7d80fda8d5c106c67fc17cc973dd17a435
 
   @media (min-width: 720px) {
   }
@@ -66,8 +82,33 @@ export const LogoDivStyle = styled.div`
 `;
 
 export const NavListStyle = styled.nav`
+<<<<<<< HEAD
   position: fixed;
   top: 20vh;
+=======
+position: inherit;
+display: flex;
+flex-direction: row;
+width: 100%;
+height: 60px;
+justify-content: space-around;
+align-items: center;
+
+a {
+  padding: 30px 1rem 0 1rem;
+  color: #becfe3;
+  text-decoration: none;
+  opacity: 0.5;
+  cursor: pointer;
+  text-align: end;
+  font-size: 1.5rem;
+  width:300px;
+}
+
+@media (max-width: 720px){
+  position: absolute;
+  top: 11vh;
+>>>>>>> e397da7d80fda8d5c106c67fc17cc973dd17a435
   background: #2a1a31;
   right: 0;
   border-bottom-left-radius: 10px;
@@ -89,24 +130,10 @@ export const NavListStyle = styled.nav`
   a:hover {
     opacity: 1;
   }
+}
 
-  @media (min-width: 720px) {
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 2.3rem;
-    right: 0%;
-    height: 60px;
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    a {
-      padding: 0.2rem;
-    }
-  }
+ 
+ 
 `;
 
 export const MenuHamburgue = styled.div`
