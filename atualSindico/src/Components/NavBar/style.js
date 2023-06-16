@@ -28,6 +28,7 @@ export const SociaisMidiasStyled = styled.div`
     width: 35%;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     h5 {
       padding: 0.1rem;
@@ -37,6 +38,11 @@ export const SociaisMidiasStyled = styled.div`
   }
 
   @media (min-width: 720px) {
+    .socialContainer {
+    h5{
+      font-size: 1.2rem;
+    }
+  }
   }
 `;
 
@@ -47,7 +53,9 @@ export const Menu_nav_social = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  @media (min-width: 720px) {
+  @media (min-width: 720px) { 
+    justify-content: space-around;
+
   }
 `;
 
@@ -63,6 +71,9 @@ export const LogoDivStyle = styled.div`
   }
 
   @media (min-width: 720px) {
+  width: 20%;
+  padding: 0.2rem;
+
   }
 `;
 
@@ -89,6 +100,16 @@ export const NavListStyle = styled.nav`
   }
   a:hover {
     opacity: 1;
+  }
+
+  @media (min-width: 720px){
+    display: flex;
+    flex-direction: row;
+    position: unset;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
   }
 }
 `;

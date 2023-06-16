@@ -40,6 +40,11 @@ export const DivNameStyle = styled.div`
       font-weight: 800;
       font-size: 1.5rem;
     }
+
+    @media (min-width: 720px){
+      margin-top:0;
+      heigth:20%;
+    }
   }
 `;
 

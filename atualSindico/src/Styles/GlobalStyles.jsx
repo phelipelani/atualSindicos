@@ -15,6 +15,12 @@ export const GlobalStyles = createGlobalStyle`
     width: 1rem;
     color:  #2a1a31;
     padding:2px;
+
+    @media (min-width: 720px) {
+        width:2rem;
+        height:1.4rem;
+        padding:0.1rem;
+    }
 }
 .fone:hover{
     color: #fff;
@@ -33,8 +39,7 @@ export const GlobalStyles = createGlobalStyle`
 .close{
     display:none;
     @media (min-width:720px) {
-        display:flex
-        
+        display:flex        
     }
 }
 
