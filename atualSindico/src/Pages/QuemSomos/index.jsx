@@ -5,50 +5,11 @@ import { motion } from "framer-motion";
 import logo from "../../Assets/LogoTipo.png";
 
 export const QuemSomos = () => {
-  // const [text, setText] = useState("");
-
-  // const [isDeleting, setIsDeleting] = useState(false);
-
-  const message = " \n";
-  // let i = 0;
-  // let deleting = false;
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     if (i === message.length && !deleting) {
-  //       setIsDeleting(true);
-  //       setTimeout(() => {
-  //         // eslint-disable-next-line react-hooks/exhaustive-deps
-  //         deleting = true;
-  //       }, 3000);
-  //     }
-
-  //     if (i === 0 && deleting) {
-  //       setIsDeleting(false);
-  //       deleting = false;
-  //     }
-
-  //     if (deleting) {
-  //       setText(message.substring(0, i--));
-  //     } else {
-  //       setText(message.substring(0, i++));
-  //     }
-
-  //     if (i > message.length) {
-  //       // eslint-disable-next-line react-hooks/exhaustive-deps
-  //       i = message.length;
-  //     }
-  //   }, 100);
-
-  //   return () => {
-  //     clearInterval(interval);
-  //   };
-  // }, [message]);
 
   const itemVariants = {
     hidden: { y: 100 },
-    visible: { y: 0 },
-  };
+    visible: { y: 0 },}
+    
   return (
     <MainStyle>
       <DivNameStyle>

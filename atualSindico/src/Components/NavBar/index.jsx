@@ -39,7 +39,6 @@ export const NavBar = ({ isMenuActive, setIsMenuActive }) => {
   return (
     <>
       <DivHeader>
-<<<<<<< HEAD
         <SociaisMidiasStyled>
           <div className="socialContainer">
             <BsFillTelephoneOutboundFill className="wppIcons fone" />
@@ -60,27 +59,6 @@ export const NavBar = ({ isMenuActive, setIsMenuActive }) => {
             <img src={logo} alt="Logo Atual" />
           </LogoDivStyle>
           <div>
-=======
-        <LogoDivStyle>
-          <img src={logo} alt="Logo Atual" />
-        </LogoDivStyle>
-        <div className="menu_desktop">
-          <SociaisMidiasStyled>
-            <div className="socialContainer">
-              <BsFillTelephoneOutboundFill className="wppIcons fone" />
-              <h5 onClick={openFone}>(12) 3883 - 8005 </h5>
-            </div>
-            <div className="socialContainer">
-              <IoLogoWhatsapp onClick={openWhatsApp} className="wppIcons wpp" />
-              <h5 onClick={openWhatsApp}>(12) 9 8300 - 3611</h5>
-            </div>
-            <div className="socialContainer">
-              <RiInstagramFill className="wppIcons insta" />
-              <h5 onClick={openInsta}>@atual_sindicoprofissional</h5>
-            </div>
-          </SociaisMidiasStyled>
-          <div className="contNav">
->>>>>>> e397da7d80fda8d5c106c67fc17cc973dd17a435
             <MenuHamburgue className={`mobileMenu`} onClick={handleMenuToggle}>
               <div className="line1"></div>
               <div className="line2"></div>
