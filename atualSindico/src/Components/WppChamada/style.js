@@ -8,7 +8,7 @@ export const DivWpp = styled.div`
   color: #becfe3;
   align-items: center;
   gap: 1rem;
-
+  
   .wppLogo {
     font-size: 2rem;
     cursor: pointer;
@@ -25,6 +25,7 @@ export const DivWpp = styled.div`
     align-items: center;
     justify-items: center;
     text-align: center;
-    background-color: rgba(49, 29, 59, 0.5);
+    background-color: rgba(49, 29, 59, 0.3);
   }
+  
 `;

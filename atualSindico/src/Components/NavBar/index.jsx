@@ -40,17 +40,17 @@ export const NavBar = ({ isMenuActive, setIsMenuActive }) => {
     <>
       <DivHeader>
         <SociaisMidiasStyled>
-          <div className="socialContainer">
+          <div onClick={openFone} className="socialContainer">
             <BsFillTelephoneOutboundFill className="wppIcons fone" />
-            <h5 onClick={openFone}>(12) 3883 - 8005 </h5>
+            <h5>(12) 3883 - 8005 </h5>
           </div>
-          <div className="socialContainer">
-            <IoLogoWhatsapp onClick={openWhatsApp} className="wppIcons wpp" />
-            <h5 onClick={openWhatsApp}>(12) 9 8300 - 3611</h5>
+          <div onClick={openWhatsApp} className="socialContainer">
+            <IoLogoWhatsapp className="wppIcons wpp" />
+            <h5>(12) 9 8300 - 3611</h5>
           </div>
-          <div className="socialContainer">
+          <div onClick={openInsta} className="socialContainer">
             <RiInstagramFill className="wppIcons insta" />
-            <h5 onClick={openInsta}>@atual_sindicoprofissional</h5>
+            <h5>@atual_sindicoprofissional</h5>
           </div>
         </SociaisMidiasStyled>
 

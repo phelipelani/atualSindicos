@@ -12,3 +12,12 @@ export const MainStyle = styled.main`
   display: flex;
   justify-content: center;
 `;
+
+export const ContainerStyle = styled.div`
+
+
+p{
+  color:#becfe3
+}
+
+`

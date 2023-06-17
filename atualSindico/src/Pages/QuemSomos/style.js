@@ -39,40 +39,38 @@ export const DivNameStyle = styled.div`
       margin: 0 auto;
       font-weight: 800;
       font-size: 1.5rem;
-    } 
+    }
   }
 
-  @media (min-width: 720px){
-    width: 95%;
+  @media (min-width: 720px) {
+    width: 100%;
     display: flex;
     margin-top: 10vh;
     align-items: center;
-    height: 30vh;
+    height: 20vh;
     padding: 1rem;
     justify-content: center;
 
     img {
       height: 100%;
-      width: 12%;
+      width: 15%;
       object-fit: contain;
-
-      em{
-        overflow: hidden;
-        color: #becfe3;
-        margin: 0 auto;
-        font-weight: 800;
-        font-size: 2rem;
-      }
     }
+   
 
     div {
- 
       height: 100%;
       display: flex;
       width: 50%;
       justify-content: space-evenly;
       align-items: flex-start;
 
+      em {
+      overflow: hidden;
+      color: #becfe3;
+      font-weight: 800;
+      font-size: calc(2.5rem + 0.5vw);
+    }
     }
   }
 `;
@@ -86,7 +84,7 @@ export const VitrineStyle = styled.ul`
   width: 100%;
   height: 70%;
   padding: 1rem;
-  margin-bottom:4rem;
+  margin-bottom: 4rem;
 
   li {
     width: 100%;
@@ -98,7 +96,7 @@ export const VitrineStyle = styled.ul`
     h4 {
       color: #becfe3;
       font-weight: 600;
-      font-size: calc(1rem + 0.5vw)
+      font-size: calc(1rem + 0.5vw);
     }
 
     h3 {
@@ -107,15 +105,29 @@ export const VitrineStyle = styled.ul`
       font-weight: bold;
       margin-bottom: 10px;
     }
+  }
+  @media (min-width: 720px) {
+    width: 100%;
+    justify-content: center;
+    li {
+      width: 55%;
+      background-color: rgba(42, 26, 49, 0.5);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+      border-radius: 1rem;
+      padding: 1rem;
 
-    @media (min-width: 720px){
-      width: 70%;
-      li {
-        width: 70%;
-        background-color: rgba(42, 26, 49, 0.5);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-        border-radius: 1rem;
-        padding: 1rem;
+      h4 {
+      color: #becfe3;
+      font-weight: 700;
+      font-size: calc(2rem + 0.5vw);
+    }
+
+    h3 {
+      color: #becfe3;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
     }
   }
 `;

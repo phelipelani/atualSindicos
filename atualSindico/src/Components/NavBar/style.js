@@ -36,11 +36,14 @@ export const SociaisMidiasStyled = styled.div`
       color: #2a1a31;
     }
   }
+  .socialContainer:hover{
+    cursor:pointer
+  }
 
   @media (min-width: 720px) {
     .socialContainer {
     h5{
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
   }
   }
@@ -110,6 +113,10 @@ export const NavListStyle = styled.nav`
     width: 100%;
     align-items: center;
     justify-content: space-around;
+
+    a{
+      font-size: 2rem;
+    }
   }
 
 `;
