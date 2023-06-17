@@ -1,7 +1,7 @@
 import { CarouselStyled, MainStyle } from "./style";
-import Banner1 from "../../assets/banner 1.png";
-import Banner2 from "../../assets/banner 2.jpeg";
-import Banner3 from "../../assets/banner 3.jpg";
+import Banner1 from "../../Assets/banner 1.png";
+import Banner2 from "../../Assets/banner 2.jpeg";
+import Banner3 from "../../Assets/banner 3.jpg";
 import { useEffect, useState } from "react";
 import { WppApelo } from "../../Components/WppChamada";
 

@@ -65,6 +65,10 @@ export const CarouselStyled = styled.div`
     width: 99vw;
     height: 48vh;
     border-radius: 1rem;
+
+    @media (min-width: 720px){
+      top: 10%;
+    }
   }
 
   .slide-container img {
@@ -73,6 +77,8 @@ export const CarouselStyled = styled.div`
     object-fit: cover;
     border-radius: 1rem;
     opacity: 0.7;
+
+   
   }
 
   .slide-text {
@@ -114,8 +120,8 @@ export const CarouselStyled = styled.div`
     .slide-text {
       text-align: start;
       width: 50%;
-      height: 20%;
-      top: 50%;
+      height: 55%;
+      top: 35%;
       font-size: 2rem;
     }
   }
