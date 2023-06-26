@@ -12,3 +12,30 @@ export const MainStyle = styled.main`
   display: flex;
   justify-content: center;
 `;
+
+export const ContainerStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+  padding: 11vh 8vw;
+  gap: 2rem;
+  label {
+    font-size: 1.5rem;
+    color: #cbd8e8;
+  }
+  input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    background: transparent;
+    :focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+  }
+`;

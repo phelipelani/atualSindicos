@@ -1,4 +1,7 @@
 import { createGlobalStyle } from "styled-components";
+
+
+
 export const GlobalStyles = createGlobalStyle`
 *{
     font-family: 'Lato', sans-serif;
@@ -10,7 +13,12 @@ export const GlobalStyles = createGlobalStyle`
     border:0;
     background-color:transparent;
     };
-
+.icons_missao{
+    width: 2.5rem;
+    height:1.5rem;
+    color:  #becfe3;
+    
+}
 .wppIcons{
     width: 1rem;
     color:  #2a1a31;

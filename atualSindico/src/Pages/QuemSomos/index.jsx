@@ -1,15 +1,17 @@
 import { WppApelo } from "../../Components/WppChamada";
-import { DivNameStyle, MainStyle, VitrineStyle } from "./style";
+import { DivNameStyle, MVVStyle, MainStyle, VitrineStyle } from "./style";
+import { IoEyeSharp } from "react-icons/io5";
+import { SiTarget } from "react-icons/si";
+import { MdDiamond } from "react-icons/md";
 import { motion } from "framer-motion";
-
 import logo from "../../Assets/LogoTipo.png";
 
 export const QuemSomos = () => {
-
   const itemVariants = {
     hidden: { y: 100 },
-    visible: { y: 0 },}
-    
+    visible: { y: 0 },
+  };
+
   return (
     <MainStyle>
       <DivNameStyle>
@@ -74,6 +76,46 @@ export const QuemSomos = () => {
             podemos transformar a gestão do seu condomínio, garantindo a
             segurança, a tranquilidade e o bem-estar de todos os condôminos.
           </h3>
+          <br />
+          <br />
+          <MVVStyle>
+            <section>
+              <div>
+                <SiTarget className="icons_missao" />
+                <h5> Missão</h5>
+              </div>
+
+              <p>
+                Nosso objetivo é ser reconhecidos por fornecer as melhores
+                soluções e serviços em sindicância profissional e gestão
+                condominial, com qualidade, rapidez, tecnologia e ética
+                profissional. 
+              </p>
+            </section>
+            <section>
+              <div>
+                <IoEyeSharp className="icons_missao" />
+                <h5> Visão</h5>
+              </div>
+              <p>
+                Nossa visão é ser uma equipe competitiva e abrangente no
+                segmento de sindicância profissional e gestão condominial.
+                Buscamos oferecer serviços que atendam às
+                necessidades dos nossos clientes.
+              </p>
+            </section>
+            <section>
+              <div>
+                <MdDiamond className="icons_missao" />
+                <h5> Valor</h5>
+              </div>
+              <p>
+                Nossos valores fundamentais são o compromisso e
+                responsabilidade, a competência e soluções criativas, com foco
+                na satisfação dos nossos clientes e nas relações éticas.
+              </p>
+            </section>
+          </MVVStyle>
         </motion.li>
       </VitrineStyle>
 

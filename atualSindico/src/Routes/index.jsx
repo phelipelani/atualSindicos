@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Home } from "../Pages/Home";
-import { Missao } from "../Pages/Missao";
+import { Depoimentos } from "../Pages/Missao";
 import { QuemSomos } from "../Pages/QuemSomos";
 import { Contato } from "../Pages/Contato";
 import { NavBar } from "../Components/NavBar";
@@ -24,7 +24,7 @@ export const RouterMain = () => {
         <Route index element={<Home isMenuActive={isMenuActive} />} />
         <Route
           path="/missao"
-          element={<Missao isMenuActive={isMenuActive} />}
+          element={<Depoimentos isMenuActive={isMenuActive} />}
         />
         <Route
           path="/quem_somos"

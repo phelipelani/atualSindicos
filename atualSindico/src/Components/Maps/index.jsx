@@ -6,7 +6,7 @@ import React from "react";
 function Maps() {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyBN3Qd5z6q-7hdhv7hNgU6U8XNUzgRcOvU",
+    googleMapsApiKey:"AIzaSyAtdhpcaTUaO0ivK01ZkUL_KZgxjwclJmo",
   });
   const locations = { lat: -23.621256, lng: -45.412624 };
 

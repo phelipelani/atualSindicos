@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import { FormStyle } from "./style";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -15,8 +16,8 @@ const ContactForm = () => {
     // Enviar o formulário usando o EmailJS
     emailjs
       .sendForm(
-        "SEU_SERVICE_ID", // Substitua pelo seu Service ID do EmailJS
-        "SEU_TEMPLATE_ID", // Substitua pelo seu Template ID do EmailJS
+        "service_edba4o8", // Substitua pelo seu Service ID do EmailJS
+        "template_sqb290g", // Substitua pelo seu Template ID do EmailJS
         e.target,
         "SEU_USER_ID" // Substitua pelo seu User ID do EmailJS
       )
@@ -41,8 +42,10 @@ const ContactForm = () => {
       );
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="name">Nome:</label>
+    <FormStyle onSubmit={handleSubmit}>
+      <label htmlFor="name">
+        Nome:
+      </label>
       <input
         type="text"
         id="name"
@@ -74,7 +77,7 @@ const ContactForm = () => {
       ></textarea>
 
       <button type="submit">Enviar</button>
-    </form>
+    </FormStyle>
   );
 };
 

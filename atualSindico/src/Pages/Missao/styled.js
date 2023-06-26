@@ -14,6 +14,14 @@ export const MainStyle = styled.main`
 `;
 
 export const ContainerStyle = styled.div`
+background-color:orange;
+margin-top:11vh;
+
+section{
+  border:2px solid black
+
+}
+
 
 
 p{
