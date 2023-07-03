@@ -1,8 +1,8 @@
 import { styled } from "styled-components";
-import background from "../../Assets/bg_contato.jfif";
+import background from "../../Assets/bg_contato.jpg";
 
 export const MainStyle = styled.main`
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(${background}) center/cover no-repeat;
   width: 100vw;
   height: 100vh;
@@ -16,26 +16,14 @@ export const MainStyle = styled.main`
 export const ContainerStyle = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: 100%;
-  padding: 11vh 8vw;
-  gap: 2rem;
-  label {
-    font-size: 1.5rem;
-    color: #cbd8e8;
-  }
-  input {
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    border-radius: 0;
-    background: transparent;
-    :focus {
-      outline: none;
-      border-color: #007bff;
-      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-    }
+  padding: 3vh 4vw;
+justify-content:space-around;
+  align-items: center;
+
+  @media (min-width: 720px) {
+    display: flex;
+    flex-direction: row-reverse;
   }
 `;

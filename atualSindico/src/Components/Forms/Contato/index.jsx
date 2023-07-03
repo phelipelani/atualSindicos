@@ -1,6 +1,7 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import { FormStyle } from "./style";
+import { BodyForm, FormStyle, HeaderForm } from "./style";
+import logo from "../../../Assets/LogoTipo.png";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -43,40 +44,51 @@ const ContactForm = () => {
   };
   return (
     <FormStyle onSubmit={handleSubmit}>
-      <label htmlFor="name">
-        Nome:
-      </label>
-      <input
-        type="text"
-        id="name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-
-      <label htmlFor="email">E-mail:</label>
-      <input
-        type="email"
-        id="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-
-      <label htmlFor="phone">Telefone:</label>
-      <input
-        type="tel"
-        id="phone"
-        value={phone}
-        onChange={(e) => setPhone(e.target.value)}
-      />
-
-      <label htmlFor="message">Mensagem:</label>
-      <textarea
-        id="message"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-      ></textarea>
-
-      <button type="submit">Enviar</button>
+      <HeaderForm>
+        <img src={logo} alt="Logo Atual" />
+        <h3>Preencha o formulário abaixo para solicitar mais informações</h3>
+      </HeaderForm>
+      <BodyForm>
+        <div>
+          {" "}
+          <label htmlFor="name">Nome:</label>
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </div>
+        <div>
+          {" "}
+          <label htmlFor="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div>
+          {" "}
+          <label htmlFor="phone">Telefone:</label>
+          <input
+            type="tel"
+            id="phone"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="message">Mensagem:</label>{" "}
+          <textarea
+            id="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          ></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </BodyForm>
     </FormStyle>
   );
 };

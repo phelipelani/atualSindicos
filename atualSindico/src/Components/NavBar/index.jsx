@@ -66,8 +66,8 @@ export const NavBar = ({ isMenuActive, setIsMenuActive }) => {
             </MenuHamburgue>
             <NavListStyle className={`${!isMenuActive ? "close" : ""}`}>
               <Link to={"/"}>Home</Link>
-              <Link to={"/Missao"}>Missão & Valor</Link>
               <Link to={"/quem_somos"}>Quem Somos</Link>
+              <Link to={"/Missao"}>Missão & Valor</Link>
               <Link to={"contato"}>Contato</Link>
             </NavListStyle>
           </div>

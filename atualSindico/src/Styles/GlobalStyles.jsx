@@ -19,6 +19,11 @@ export const GlobalStyles = createGlobalStyle`
     color:  #becfe3;
     
 }
+
+.marker_pointer{
+    margin-top:-30px;
+    
+  }
 .wppIcons{
     width: 1rem;
     color:  #2a1a31;
