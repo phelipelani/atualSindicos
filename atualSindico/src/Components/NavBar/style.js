@@ -43,7 +43,7 @@ export const SociaisMidiasStyled = styled.div`
   @media (min-width: 720px) {
     .socialContainer {
     h5{
-      font-size: 1.3rem;
+      font-size: 1vw;
     }
   }
   }
@@ -115,7 +115,7 @@ export const NavListStyle = styled.nav`
     justify-content: space-around;
 
     a{
-      font-size: 2rem;
+      font-size: 1.8vw;
     }
   }
 

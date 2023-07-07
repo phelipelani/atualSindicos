@@ -10,7 +10,7 @@ export const DivWpp = styled.div`
   gap: 1rem;
   
   .wppLogo {
-    font-size: 5rem;
+    font-size: 4vw;
     cursor: pointer;
     color: #2ae40c;
   }

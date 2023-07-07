@@ -38,7 +38,7 @@ export const DivNameStyle = styled.div`
       color: #becfe3;
       margin: 0 auto;
       font-weight: 800;
-      font-size: 1.5rem;
+      font-size: 1vw;
     }
   }
 
@@ -68,7 +68,7 @@ export const DivNameStyle = styled.div`
         overflow: hidden;
         color: #becfe3;
         font-weight: 800;
-        font-size: calc(2.5rem + 0.5vw);
+        font-size: 2.5vw
       }
     }
   }

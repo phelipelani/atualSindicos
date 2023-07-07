@@ -27,7 +27,7 @@ export const QuemSomos = () => {
           variants={itemVariants}
           initial="hidden"
           animate="visible"
-          transition={{ ease: "easeOut", duration: 0.5 }}
+          transition={{ ease: "backIn", duration: 0.5 }}
         >
           <h4>Quem Somos</h4>
           <br />
