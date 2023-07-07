@@ -15,7 +15,7 @@ export const MainStyle = styled.main`
 `;
 
 export const DivNameStyle = styled.div`
-  width: 95%;
+  width: 100%;
   padding: 1rem;
   display: flex;
   margin-top: 12vh;

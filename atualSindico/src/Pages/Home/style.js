@@ -67,7 +67,8 @@ export const CarouselStyled = styled.div`
     border-radius: 1rem;
 
     @media (min-width: 720px){
-      top: 10%;
+      top: 22vh; 
+      height: 80vh;
     }
   }
 
@@ -120,8 +121,8 @@ export const CarouselStyled = styled.div`
     .slide-text {
       text-align: start;
       width: 50%;
-      height: 55%;
-      top: 35%;
+      height: 30%;
+      top: 25%;
       font-size: 2rem;
     }
   }

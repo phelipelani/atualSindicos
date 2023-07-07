@@ -10,10 +10,7 @@ export const WppApelo = () => {
   }
   return (
     <DivWpp onClick={openWhatsApp}>
-      <h3>
-        Converse diretamente <br></br>conosco no WhatsApp!
-      </h3>
-      <IoLogoWhatsapp className="wppLogo" />
+        <IoLogoWhatsapp className="wppLogo" />
     </DivWpp>
   );
 };

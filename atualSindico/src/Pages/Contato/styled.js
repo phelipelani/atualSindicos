@@ -14,16 +14,28 @@ export const MainStyle = styled.main`
 `;
 
 export const ContainerStyle = styled.div`
+  padding-top: 11vh;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
-  padding: 3vh 4vw;
-justify-content:space-around;
+  height: 80%;
   align-items: center;
+  gap: 2rem;
+  background-color: rgba(218, 233, 240, 0.6);
 
   @media (min-width: 720px) {
     display: flex;
-    flex-direction: row-reverse;
+    border-top: 20%;
+  }
+`;
+
+export const ContainerContato = styled.div`
+  @media (min-width: 720px) {
+    display: flex;
+    gap: 1rem;
+    height: 80%;
+    width: 80%;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(49, 29, 59, 0.7);
   }
 `;

@@ -7,12 +7,11 @@ export const FormStyle = styled.form`
   flex-direction: column;
   padding: 2rem;
   gap: 1rem;
-  background: rgba(218, 233, 240, 0.6);
-  box-shadow: 0 2px 4px rgba(49, 29, 59, 0.7);
+
   width: 45%;
 
   @media (min-width: 720px) {
-    height: 80%;
+    height: 100%;
     align-items: center;
   }
 `;
@@ -24,10 +23,9 @@ export const HeaderForm = styled.div`
     width: 80%;
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 0.5rem;
     padding: 0.5rem;
-    margin-bottom: 1.5rem;
-    justify-content: space-around;
+    margin-bottom: 0.5rem;
     img {
       height: auto;
       object-fit: cover;
@@ -42,19 +40,19 @@ export const BodyForm = styled.div`
   display: flex;
   flex-direction: column;
   width: 80%;
-  height: 90%;
-  gap: 1.5rem;
+  height: 80%;
+  gap: 1rem;
   align-items: center;
 
   div {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 15%;
+
     label {
       font-size: 1.5rem;
       color: #411052;
-      font-weight: 800;
+      font-weight: 900;
     }
     input {
       width: 100%;
@@ -62,7 +60,6 @@ export const BodyForm = styled.div`
       font-size: 1rem;
       border: none;
       border-bottom: 1px solid #fff;
-      border-radius: 0;
       background: transparent;
       :focus {
         outline: none;
@@ -72,11 +69,11 @@ export const BodyForm = styled.div`
     textarea {
       background-color: rgba(218, 233, 240, 0.3);
       color: #411052;
-      font-size: 1.2rem;
-      padding:0.5rem;
+      font-size: 1rem;
+      padding: 0.5rem;
       height: 2.5em;
-      overflow: auto; /* Adiciona barra de rolagem quando o conteúdo excede o tamanho do textarea */
-      resize: none; /* Impede o redimensionamento do textarea pelo usuário */
+      overflow: auto;
+      resize: none;
     }
   }
   button {

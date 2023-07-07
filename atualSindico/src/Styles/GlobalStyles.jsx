@@ -16,7 +16,7 @@ export const GlobalStyles = createGlobalStyle`
 .icons_missao{
     width: 2.5rem;
     height:1.5rem;
-    color:  #becfe3;
+    color:  rgb(190, 207, 227);
     
 }
 
@@ -26,7 +26,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 .wppIcons{
     width: 1rem;
-    color:  #2a1a31;
+    color:  rgb(42, 26, 49);
     padding:2px;
 
     @media (min-width: 720px) {
