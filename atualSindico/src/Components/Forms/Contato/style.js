@@ -30,7 +30,7 @@ export const HeaderForm = styled.div`
     margin-bottom: 0.5rem;
     img {
       object-fit: cover;
-      height: 100%;
+      height: auto;
       width: 10%;
     }
     h3 {
@@ -75,7 +75,7 @@ export const BodyForm = styled.div`
       color: #411052;
       font-size: 0.8vw;
       padding: 0.5rem;
-      height: 2.5em;
+      height: 5vw;
       overflow: auto;
       resize: none;
     }
@@ -84,11 +84,16 @@ export const BodyForm = styled.div`
     width: 15vw;
     height: 5vh;
     border-radius: 2rem;
-
     background-color: #411052;
     color: rgba(218, 233, 240, 1);
     cursor: pointer;
-
     font-size: 1.5vw;
+    transition:0.3s
+  }
+  button:hover{
+    background-color: rgb(190, 207, 227);
+    color:#411052;
+    transition:0.3s;
+    font-weight: 900;
   }
 `;

@@ -46,7 +46,7 @@ export const QuemSomos = () => {
             para garantir que o seu condomínio esteja em boas mãos.
             <br />
             <br />
-            Administração financeira, gestão de recursos humanos, manutenção
+            Administração financeira, gestão de pessoas, manutenção
             predial e mediação de conflitos são apenas algumas das áreas em que
             podemos ajudar. Estamos preparados para cuidar de todos os detalhes,
             visando a tranquilidade e a preservação do patrimônio dos
@@ -78,44 +78,7 @@ export const QuemSomos = () => {
           </h3>
           <br />
           <br />
-          <MVVStyle>
-            <section>
-              <div>
-                <SiTarget className="icons_missao" />
-                <h5> Missão</h5>
-              </div>
 
-              <p>
-                Nosso objetivo é ser reconhecidos por fornecer as melhores
-                soluções e serviços em sindicância profissional e gestão
-                condominial, com qualidade, rapidez, tecnologia e ética
-                profissional. 
-              </p>
-            </section>
-            <section>
-              <div>
-                <IoEyeSharp className="icons_missao" />
-                <h5> Visão</h5>
-              </div>
-              <p>
-                Nossa visão é ser uma equipe competitiva e abrangente no
-                segmento de sindicância profissional e gestão condominial.
-                Buscamos oferecer serviços que atendam às
-                necessidades dos nossos clientes.
-              </p>
-            </section>
-            <section>
-              <div>
-                <MdDiamond className="icons_missao" />
-                <h5> Valor</h5>
-              </div>
-              <p>
-                Nossos valores fundamentais são o compromisso e
-                responsabilidade, a competência e soluções criativas, com foco
-                na satisfação dos nossos clientes e nas relações éticas.
-              </p>
-            </section>
-          </MVVStyle>
         </motion.li>
       </VitrineStyle>
 

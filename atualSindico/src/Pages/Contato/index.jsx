@@ -10,10 +10,13 @@ export const Contato = ({ isMenuActive }) => {
     <MainStyle className={`${isMenuActive ? "mobile" : ""}`}>
       <ContainerStyle>
         <ContainerContato>
-          <CartaoContato />
+          <section>
+            <CartaoContato />
+            <Maps />
+
+          </section>
           <ContactForm />
         </ContainerContato>
-        <Maps />
       </ContainerStyle>
       <WppApelo />
     </MainStyle>

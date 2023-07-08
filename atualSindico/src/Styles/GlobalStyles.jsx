@@ -7,7 +7,6 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Lato', sans-serif;
     font-size:16px;
     box-sizing:border-box;   
-    background-color:pink;
     padding:0;
     margin:0;
     border:0;

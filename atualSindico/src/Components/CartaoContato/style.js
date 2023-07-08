@@ -3,34 +3,36 @@ import { styled } from "styled-components";
 export const DivCartaoStyle = styled.div`
   @media (min-width: 720px) {
       display: flex;
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 60%;
     padding: 1rem;
     box-sizing: border-box;
+    
   }
 `;
 
 export const DivCartaoImg = styled.div`
-     width: 50%;
+    width: 40%;
     height: 100%;
+    display: flex;
+    align-items: center;
 
    img {
-      object-fit: cover;
+    object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 `;
 
 export const DivCartaoText = styled.div`
-padding: 0 1rem;
+padding: 2rem 1rem;
 display: flex;
 flex-direction: column;
-justify-content: space-around;
-width: 50%;
+width: 60%;
 height: 100%;
 
   h4 {
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: 900;
     font-style: oblique;
     text-align: start;
@@ -38,15 +40,15 @@ height: 100%;
   }
 
   p {
-    margin-top: 1vw;
-    font-size: 1.5rem;
+    margin-top: 1.3vw;
+    font-size: 1.3rem;
     font-weight: 700;
     text-align: start;
     color: #2a1a31;
   }
 
   h6 {
-    font-size: 0.75vw;
+    font-size: 1.1vw;
     font-weight: 700;
     text-align: start;
     color: #2a1a31;

@@ -17,7 +17,7 @@ export const ContainerStyle = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: 50%;
   align-items: center;
   gap: 2rem;
   background-color: rgba(218, 233, 240, 0.6);
@@ -33,9 +33,15 @@ export const ContainerContato = styled.div`
   @media (min-width: 720px) {
     display: flex;
     gap: 1rem;
-    height: 70%;
+     height: 100%;
     width: 80%;
     border-radius: 1rem;
     box-shadow: 0 2px 4px rgba(49, 29, 59, 0.7);
+
+    section{
+      height: 100%;
+      width:50%;
+      
+    }
   }
 `;
