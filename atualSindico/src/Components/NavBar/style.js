@@ -32,7 +32,7 @@ export const SociaisMidiasStyled = styled.div`
 
     h5 {
       padding: 0.1rem;
-      font-size: 0.6rem;
+      font-size: 1.8vw;
       color: #2a1a31;
     }
   }
@@ -128,7 +128,7 @@ export const MenuHamburgue = styled.div`
 
   width: 45px;
   height: 30px;
-  margin-right: 2rem;
+  margin-right: 13vw;
   justify-content: space-around;
 
   @media (min-width: 720px) {

@@ -1,13 +1,12 @@
 import { CarouselStyled, MainStyle } from "./style";
 import Banner1 from "../../Assets/banner 1.png";
-import Banner2 from "../../Assets/banner 2.jpeg";
+import Banner2 from "../../Assets/banner 2.jpg";
 import Banner3 from "../../Assets/banner 3.jpg";
 import { useEffect, useState } from "react";
 import { WppApelo } from "../../Components/WppChamada";
 
 // eslint-disable-next-line react/prop-types
 export const Home = ({ isMenuActive }) => {
-
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const nextSlide = () => {

@@ -1,16 +1,8 @@
 import { WppApelo } from "../../Components/WppChamada";
-import { DivNameStyle, MVVStyle, MainStyle, VitrineStyle } from "./style";
-import { IoEyeSharp } from "react-icons/io5";
-import { SiTarget } from "react-icons/si";
-import { MdDiamond } from "react-icons/md";
-import { motion } from "framer-motion";
+import { DivNameStyle, MainStyle, VitrineStyle } from "./style";
 import logo from "../../Assets/LogoTipo.png";
 
 export const QuemSomos = () => {
-  const itemVariants = {
-    hidden: { y: 100 },
-    visible: { y: 0 },
-  };
 
   return (
     <MainStyle>
@@ -23,12 +15,7 @@ export const QuemSomos = () => {
       </DivNameStyle>
 
       <VitrineStyle>
-        <motion.li
-          variants={itemVariants}
-          initial="hidden"
-          animate="visible"
-          transition={{ ease: "backIn", duration: 0.5 }}
-        >
+        <li>
           <h4>Quem Somos</h4>
           <br />
           <br />
@@ -46,11 +33,10 @@ export const QuemSomos = () => {
             para garantir que o seu condomínio esteja em boas mãos.
             <br />
             <br />
-            Administração financeira, gestão de pessoas, manutenção
-            predial e mediação de conflitos são apenas algumas das áreas em que
-            podemos ajudar. Estamos preparados para cuidar de todos os detalhes,
-            visando a tranquilidade e a preservação do patrimônio dos
-            condôminos.
+            Administração financeira, gestão de pessoas, manutenção predial e
+            mediação de conflitos são apenas algumas das áreas em que podemos
+            ajudar. Estamos preparados para cuidar de todos os detalhes, visando
+            a tranquilidade e a preservação do patrimônio dos condôminos.
             <br />
             <br />
             <br />
@@ -78,8 +64,7 @@ export const QuemSomos = () => {
           </h3>
           <br />
           <br />
-
-        </motion.li>
+        </li>
       </VitrineStyle>
 
       <WppApelo />

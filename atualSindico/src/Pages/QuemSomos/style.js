@@ -2,7 +2,10 @@ import { styled } from "styled-components";
 import background from "../../Assets/bg.jpg";
 
 export const MainStyle = styled.main`
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(
+      rgba(190, 207, 227, 0.6),
+      rgba(190, 207, 227, 0.6)
+    ),
     url(${background}) center/cover no-repeat;
   width: 100vw;
   height: 100%;
@@ -22,7 +25,7 @@ export const DivNameStyle = styled.div`
   align-items: center;
 
   img {
-    height: 100%;
+    height: auto;
     width: 20%;
     object-fit: cover;
   }
@@ -34,11 +37,9 @@ export const DivNameStyle = styled.div`
     text-align: center;
 
     em {
-      overflow: hidden;
-      color: #becfe3;
-      margin: 0 auto;
-      font-weight: 800;
-      font-size: 1vw;
+      color: rgba(42, 26, 49, 1);
+      font-weight: 900;
+      font-size: 6vw;
     }
   }
 
@@ -66,9 +67,9 @@ export const DivNameStyle = styled.div`
 
       em {
         overflow: hidden;
-        color: #becfe3;
+        color: #2a1a31;
         font-weight: 800;
-        font-size: 2.5vw
+        font-size: 2.5vw;
       }
     }
   }
@@ -79,28 +80,27 @@ export const VitrineStyle = styled.ul`
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
   width: 100%;
   height: 70%;
   padding: 1rem;
   margin-bottom: 4rem;
 
   li {
-    width: 100%;
-    background-color: rgba(42, 26, 49, 0.5);
+    width: 80%;
+    background-color: rgba(42, 26, 49, 1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     border-radius: 1rem;
     padding: 1rem;
 
     h4 {
       color: #becfe3;
-      font-weight: 600;
-      font-size: calc(1rem + 0.5vw);
+      font-weight: 700;
+      font-size: 4vw
     }
 
     h3 {
       color: #becfe3;
-      font-size: 1rem;
+      font-size: 3vw;
       font-weight: bold;
       margin-bottom: 10px;
     }
@@ -109,8 +109,8 @@ export const VitrineStyle = styled.ul`
     width: 100%;
     justify-content: center;
     li {
-      width: 55%;
-      background-color: rgba(42, 26, 49, 0.5);
+      width: 80%;
+      background-color: rgba(42, 26, 49, 0.9);
       box-shadow: 0 0 10px rgba(0, 0, 0, 1);
       border-radius: 1rem;
       padding: 1rem;
@@ -131,48 +131,3 @@ export const VitrineStyle = styled.ul`
   }
 `;
 
-export const MVVStyle = styled.div`
-  gap: 1rem;
-  display: flex;
-  flex-direction: column;
-  height: 20%;
-
-  section {
-    padding: 1rem;
-    border-radius: 2rem;
-    height: 100%;
-    div {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 10px;
-
-      h5 {
-        color: #becfe3;
-        font-size: 1.5rem;
-        font-weight: 900;
-        text-align: center;
-      }
-    }
-    p {
-      color: #becfe3;
-      font-size: 1.1rem;
-      font-weight: 600;
-    }
-  }
-  @media (min-width: 720px) {
-    section {
-      div {
-        h5 {
-          color: #becfe3;
-          font-weight: 700;
-          font-size: calc(2rem + 0.5vw);
-        }
-      }
-      p {
-        font-weight: 600;
-        font-size: calc(1rem + 0.5vw);
-      }
-    }
-  }
-`;

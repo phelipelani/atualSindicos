@@ -2,73 +2,49 @@ import { styled } from "styled-components";
 import background from "../../Assets/bg_MIssao.jfif";
 
 export const MainStyle = styled.main`
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(
+      rgba(190, 207, 227, 0.6),
+      rgba(190, 207, 227, 0.6)
+    ),
     url(${background}) center/cover no-repeat;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  position: static;
+  padding-top: 12vh;
   display: flex;
-  justify-content: center;
-`;
-
-export const TextStyled = styled.div`
-  height: 100%;
-  .banner {
-    height: 100%;
-    width: 80%;
-    object-fit: cover;
-  }
-`;
-
-export const ConteinerStaly = styled.div`
-  width: 90%;
-  margin: 0.5rem auto;
-`;
-
-export const MainStyled = styled.main`
-  width: 100%;
-  height: 100vh;
-`;
-export const CarrosselContainer = styled.div`
-  width: 100%;
-  height: 100vh;
-  .carousel-root {
-    width: 100%;
-    box-sizing: border-box;
-  }
+  flex-direction: column;
+  gap: 1rem;
+  box-sizing: border-box;
+  align-items: center;
 `;
 
 export const CarouselStyled = styled.div`
   display: flex;
   border-radius: 2rem;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  justify-content: center;
+  height: 80%;
+  padding-top: 12vh;
+
+
   .carousel {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
     width: 100%;
     height: 100%;
-    padding: 1rem 0.3rem;
     border-radius: 2rem;
 
     @media (min-width: 720px) {
-      max-width: 99%;
-      max-height: 80%;
+      width: 100%;
+      height: auto;
     }
   }
 
   .slide-container {
-    position: relative;
-    width: 99vw;
-    height: 48vh;
     border-radius: 1rem;
+    width: 100%;
+    height: auto;
 
-    @media (min-width: 720px){
-      top: 22vh; 
-      height: 80vh;
+    @media (min-width: 720px) {
     }
   }
 
@@ -78,24 +54,20 @@ export const CarouselStyled = styled.div`
     object-fit: cover;
     border-radius: 1rem;
     opacity: 0.7;
-
-   
   }
 
   .slide-text {
-    border-radius: 0.5rem;
-    display: flex;
-    width: 90%;
-    height: 50%;
-    bottom: 0.5rem;
-    left: 1rem;
-    align-items: center;
-    padding: 0.5rem;
-    position: absolute;
+    width: 80%;
+    height: 20vw;
     color: white;
     background: rgba(49, 29, 59, 0.5);
-    font-size: 1rem;
+    font-size: 4vw;
+    left: 6vw;
+    top: 100vw;
     animation: fadeInOut 5s infinite;
+    position: absolute;
+    border-radius:1rem;
+    padding:1vw;
   }
 
   @keyframes fadeInOut {
@@ -119,11 +91,15 @@ export const CarouselStyled = styled.div`
 
   @media (min-width: 720px) {
     .slide-text {
-      text-align: start;
-      width: 50%;
+      border-radius: 0.5rem;
+      display: flex;
+      width: 75vw;
       height: 30%;
-      top: 25%;
-      font-size: 2rem;
+      left: 6vw;
+      top: 50%;
+      align-items: center;
+      padding: 0.5rem;
+      font-size: 3vw;
     }
   }
 `;

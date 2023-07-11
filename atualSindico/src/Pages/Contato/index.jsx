@@ -13,7 +13,6 @@ export const Contato = ({ isMenuActive }) => {
           <section>
             <CartaoContato />
             <Maps />
-
           </section>
           <ContactForm />
         </ContainerContato>

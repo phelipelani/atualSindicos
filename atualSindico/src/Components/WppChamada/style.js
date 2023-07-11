@@ -4,19 +4,25 @@ export const DivWpp = styled.div`
   display: flex;
   position: fixed;
   bottom: 3%;
-  left: 90%;
+  left: 89vw;
   color: #becfe3;
   align-items: center;
   gap: 1rem;
-  
+
   .wppLogo {
-    font-size: 4vw;
+    font-size: 7vw;
     cursor: pointer;
-    color: #2ae40c;
+    color: #2a1a31;
   }
   .wppLogo:hover {
-    color: #becfe3;
+    color: #17c34a;
   }
+  @media (min-width: 720px) {
+    bottom: 3%;
+    left: 93vw;
 
-  
+    .wppLogo {
+      font-size: 4vw;
+    }
+  }
 `;

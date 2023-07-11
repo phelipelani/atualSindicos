@@ -23,7 +23,7 @@ export const RouterMain = () => {
       >
         <Route index element={<Home isMenuActive={isMenuActive} />} />
         <Route
-          path="/missao"
+          path="/NossoTrabalho"
           element={<Depoimentos isMenuActive={isMenuActive} />}
         />
         <Route
