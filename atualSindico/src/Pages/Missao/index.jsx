@@ -7,7 +7,7 @@ export const Depoimentos = ({ isMenuActive }) => {
       <ContainerStyle>
         <div>
           <h2>
-            Precisando de uma solução completa em gestão? Cansado de ver a taxa
+            Precisando de uma solução completa em gestão condominial? Cansado de ver a taxa
             condominial subir e nada mudar? Fale com a Atual Sindicos
           </h2>
         </div>

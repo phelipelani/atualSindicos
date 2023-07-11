@@ -5,13 +5,17 @@ import Banner3 from "../../Assets/banner 3.jpg";
 import { useEffect, useState } from "react";
 import { WppApelo } from "../../Components/WppChamada";
 
+
+
 // eslint-disable-next-line react/prop-types
-export const Home = ({ isMenuActive }) => {
+export const Home = ({ isMenuActive}) => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const nextSlide = () => {
     setCurrentSlideIndex((currentSlideIndex + 1) % slides.length);
   };
+  
   useEffect(() => {
     const timer = setInterval(() => {
       nextSlide();
@@ -50,3 +54,4 @@ export const Home = ({ isMenuActive }) => {
     </MainStyle>
   );
 };
+
