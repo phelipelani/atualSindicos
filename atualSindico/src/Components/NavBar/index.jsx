@@ -9,6 +9,7 @@ import {
   NavListStyle,
   SociaisMidiasStyled,
 } from "./style";
+
 import { Link, Outlet } from "react-router-dom";
 import logo from "../../../src/Assets/lg1.png";
 

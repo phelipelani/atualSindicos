@@ -8,7 +8,7 @@ export const MainStyle = styled.main`
     ),
     url(${background}) center/cover no-repeat;
   width: 100vw;
-  height: 100vh;
+  height: 100vh ;
   object-fit: cover;
   padding-top: 12vh;
   display: flex;
@@ -58,12 +58,12 @@ export const CarouselStyled = styled.div`
 
   .slide-text {
     width: 80%;
-    height: 20vw;
+    height: 20%;
     color: white;
     background: rgba(49, 29, 59, 0.5);
     font-size: 4vw;
     left: 6vw;
-    top: 100vw;
+    top: 55%;
     animation: fadeInOut 5s infinite;
     position: absolute;
     border-radius:1rem;

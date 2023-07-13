@@ -8,7 +8,7 @@ export const MainStyle = styled.main`
     ),
     url(${background}) center/cover no-repeat;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
   padding-top: 12vh;
   display: flex;
@@ -22,13 +22,6 @@ export const ContainerStyle = styled.div`
   margin-top: 12vh;
   width: 80%;
   height: 100%;
-
-
-  @media (min-width: 720px) {
-    margin-top: 12vh;
-    width: 80%;
-    height: 100%;
-  }
 `;
 
 export const ContainerContato = styled.div`

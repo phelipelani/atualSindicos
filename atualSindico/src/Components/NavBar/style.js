@@ -63,7 +63,7 @@ export const Menu_nav_social = styled.div`
 `;
 
 export const LogoDivStyle = styled.div`
-  width: 50%;
+  width: 30vw;
   height: 100%;
   padding: 1rem;
   align-items: center;

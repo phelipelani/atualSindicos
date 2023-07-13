@@ -15,10 +15,11 @@ export const MainStyle = styled.main`
   flex-direction: column;
   gap: 1rem;
   box-sizing: border-box;
+  align-items: center;
 `;
 
 export const DivNameStyle = styled.div`
-  width: 100%;
+  width: 70%;
   padding: 1rem;
   display: flex;
   margin-top: 12vh;
@@ -39,18 +40,18 @@ export const DivNameStyle = styled.div`
     em {
       color: rgba(42, 26, 49, 1);
       font-weight: 900;
-      font-size: 6vw;
+      font-size: 4vw;
     }
   }
 
   @media (min-width: 720px) {
-    width: 100%;
+    width: 60%;
     display: flex;
     margin-top: 10vh;
     align-items: center;
     height: 20vh;
     padding: 1rem;
-    justify-content: center;
+    justify-content: space-around;
 
     img {
       height: 100%;
@@ -69,7 +70,7 @@ export const DivNameStyle = styled.div`
         overflow: hidden;
         color: #2a1a31;
         font-weight: 800;
-        font-size: 2.5vw;
+        font-size: 2vw;
       }
     }
   }
@@ -109,7 +110,7 @@ export const VitrineStyle = styled.ul`
     width: 100%;
     justify-content: center;
     li {
-      width: 80%;
+      width: 60%;
       background-color: rgba(42, 26, 49, 0.9);
       box-shadow: 0 0 10px rgba(0, 0, 0, 1);
       border-radius: 1rem;
@@ -118,12 +119,12 @@ export const VitrineStyle = styled.ul`
       h4 {
         color: #becfe3;
         font-weight: 700;
-        font-size: calc(2rem + 0.5vw);
+        font-size: calc(1.5rem + 0.5vw);
       }
 
       h3 {
         color: #becfe3;
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: bold;
         margin-bottom: 10px;
       }

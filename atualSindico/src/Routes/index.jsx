@@ -1,40 +1,57 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { Home } from "../Pages/Home";
 import { Depoimentos } from "../Pages/Missao";
 import { QuemSomos } from "../Pages/QuemSomos";
 import { Contato } from "../Pages/Contato";
 import { NavBar } from "../Components/NavBar";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import InfiniteScroll from "react-infinite-scroll-component";
 
-export const RouterMain = () => {
+export const MainRouter = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
-  console.log(`vindo do routes ${isMenuActive}`);
+  const location = useLocation();
+
+  const getNextPagePath = (currentPath) => {
+    switch (currentPath) {
+      case "/":
+        return "/quem_somos";
+      case "/quem_somos":
+        return "/NossoTrabalho";
+      case "/NossoTrabalho":
+        return "/contato";
+      default:
+        return null;
+    }
+  };
+
+  const pageHeight = "100vh";
+
+  const routesRef = useRef(null);
+
+  useEffect(() => {
+    routesRef.current.scrollIntoView({ behavior: "smooth" });
+  }, [location.pathname]);
 
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <NavBar
-            isMenuActive={isMenuActive}
-            setIsMenuActive={setIsMenuActive}
+    <>
+      <NavBar isMenuActive={isMenuActive} setIsMenuActive={setIsMenuActive} />
+      <div ref={routesRef}>
+        <Routes>
+          <Route path="/" element={<Home isMenuActive={isMenuActive} />} />
+          <Route
+            path="/NossoTrabalho"
+            element={<Depoimentos isMenuActive={isMenuActive} />}
           />
-        }
-      >
-        <Route index element={<Home isMenuActive={isMenuActive} />} />
-        <Route
-          path="/NossoTrabalho"
-          element={<Depoimentos isMenuActive={isMenuActive} />}
-        />
-        <Route
-          path="/quem_somos"
-          element={<QuemSomos isMenuActive={isMenuActive} />}
-        />
-        <Route
-          path="/contato"
-          element={<Contato isMenuActive={isMenuActive} />}
-        />
-      </Route>
-    </Routes>
+          <Route
+            path="/quem_somos"
+            element={<QuemSomos isMenuActive={isMenuActive} />}
+          />
+          <Route
+            path="/contato"
+            element={<Contato isMenuActive={isMenuActive} />}
+          />
+        </Routes>
+      </div>
+    </>
   );
 };
